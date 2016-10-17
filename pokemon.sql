@@ -8,9 +8,11 @@ CREATE TABLE pokemon (
   stam INTEGER NOT NULL,
   candy TEXT NOT NULL,
   candy_de TEXT NOT NULL,
-  candy_fr TEXT NOT NULL
+  candy_fr TEXT NOT NULL,
+  evolveCandy INTEGER NOT NULL
 );
 .mode csv pokemon
 .separator ;
 .import /data/list-pokemon.csv pokemon
+.dump
 .quit
